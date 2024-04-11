@@ -53,6 +53,8 @@ export type State = {
     // // Test it out:
     // console.log(rawFormData);
 
+    const { customerId, amount, status } = validatedFields.data; // 提取字段
+
     const amountInCents = amount * 100;
     const date = new Date().toISOString().split('T')[0];
 
